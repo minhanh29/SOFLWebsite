@@ -37,7 +37,7 @@ blockquote::after {
 .member {
     clear: both;
     display: block;
-    margin: 2em;
+    margin: 2em;    /*2.4.2 - e - About page*/
     margin-right: 0px;
     padding-top: 3em;
     position: relative;
