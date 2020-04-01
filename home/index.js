@@ -1,7 +1,7 @@
 "use strict";
 
 
-/* 2.4.6 - b Current Time - Home Page*/
+/* 2.4.6 - a,b - Home Page*/
 //Clock
 setInterval("showClock()", 1000);
 function showClock () {
