@@ -411,6 +411,7 @@ input#email::placeholder {
     color: rgb(117, 117, 117);
 }
 
+/*2.4.2 - d - Email input in the footer*/
 input#email:focus:valid {
     background: rgb(240, 255, 243) url("home/valid.png") bottom right/contain no-repeat;
     background-origin: padding-box;
