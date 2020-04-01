@@ -1,0 +1,289 @@
+@charset "utf-8";
+
+/*section headings*/
+div.infor > div > div > h2, #welcome h2 {
+    font-size: 2rem;
+    color: rgb(0, 112, 224);
+    margin: 1em;
+    margin-left: 0px;
+}
+
+.infor {
+    padding: 2em 0px;
+}
+
+
+
+/*gallery*/
+#gallery {
+    display: block;
+    width: 100%;
+}
+
+figure.product  {
+    position: relative;
+    background-image: url("homebG.webp");
+    background-size: cover;
+}
+
+figure.product img {
+    width: 100%;
+}
+
+figure.product figcaption {
+    display: none;
+    position: absolute;
+    left: 4em;
+    bottom: 4em;
+}
+
+.product h2, .product h3 {
+    font-size: 3rem;
+    font-style: italic;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.product h3 {
+    font-size: 2rem;
+    margin-top: 1em;
+}
+
+.product button {
+    margin-left: 2em;
+    padding: 0.7em;
+    color: white;
+    background-color: hsla(220, 0%, 75%, 0.5);
+    border: 2px solid white;
+    font-size: 1rem;
+}
+
+
+/*Products section*/
+#products {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#products img {
+    width: 100%;
+}
+
+#products ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4px;
+    margin-left: 2em;
+}
+
+#products ul li {
+    display: block;
+    position: relative;
+}
+
+#products h3 {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#products a:hover img, #products a:active img{
+    filter: brightness(75%);
+}
+
+#products a:hover h3, #products a:active h3{
+    border-bottom: 1px solid white;
+    padding: 0.5em;
+}
+
+
+/*Welcome section*/
+#welcome {
+    display: block;
+    margin: 4em 0px;
+    padding-bottom: 1.5em;
+    line-height: 2.2em;
+    position: relative;
+}
+
+#welcome > #welcomeVideo {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index:1;
+    width: 100%;
+}
+
+
+#welcome article {
+    display: block;
+    padding: 3em;
+    padding-top: 1em;
+    background-color: white;
+}
+
+#welcome article h2 {
+    margin-bottom: 0.3em;
+}
+
+#welcome p {
+    display: block;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+/*2.4.2 - i Drop Cap*/
+#welcome p::first-letter {    
+    float: left;
+    font-size: 5rem;
+    padding-top: 0.2em;
+    color: rgb(0, 112, 224);
+}
+
+#welcome a {
+    padding: 0.7em;
+    background-color: rgb(253, 118, 8);
+    color: white;
+    font-size: 1.2rem;
+}
+
+#welcome a:hover, #welcome a:active {
+    background-color: rgb(235, 106, 0);
+}
+
+/*New Release section*/
+#newRelease {
+    clear: both;
+    padding-bottom: 2em;
+}
+
+#newRelease > a {
+    display: block;
+    float: right;
+    padding: 0.7em;
+    margin: 1em;
+    color: rgb(3, 87, 172);
+    letter-spacing: 0.2em;
+}
+
+#newRelease > a:hover::after, #newRelease > a:active::after {
+    content: "\00bb";
+    font-size: 1rem;
+}
+
+#release {
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 3em;
+}
+
+
+/* ====================
+   Mobile Styles: 0px to 480px
+   ====================== 
+*/
+
+@media only screen and (max-width: 480px) {
+    
+    .product figcaption {
+        display: none;
+    }
+
+    #products ul {
+        display: block;
+        margin: 1em auto;
+        width: 100%;
+    }
+
+    #products ul li {
+        width: 100%;
+    }
+
+    #release article {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    #welcome {
+        overflow: visible;
+        max-height: 100%;
+    }
+
+    #welcome article {
+        position: relative;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 2px solid rgb(235, 106, 0);
+    }
+}
+
+/* ====================
+   Tablet Sytles: 480px to 768px
+   ====================== 
+*/
+
+@media only screen and (min-width: 481px) {
+    
+    .product figcaption {
+        display: none;
+    }
+
+    #release article {
+        width: 80%;
+        margin-bottom: 1em;
+    }
+
+    #welcome {
+        overflow: visible;
+        max-height: 100%;
+    }
+
+    #welcome article {
+        position: relative;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 2px solid rgb(235, 106, 0);
+    }
+}
+
+/* ====================
+   Desktop Sytles: greater than 768px
+   ====================== 
+*/
+
+@media only screen and (min-width: 769px) {
+    
+    .product figcaption {
+        display: block;
+    }
+
+    #release .trick {
+        width: 40%;
+        margin-bottom: 0px;
+    }
+
+    #welcome {
+        overflow: hidden;
+        max-height: 650px;
+    }
+
+    #welcome article {
+        position: absolute;
+        top: 15%;
+        right: 5%;
+        z-index: 2;
+        width: 450px;
+        border: none;
+    }
+    
+}
+
+
+
