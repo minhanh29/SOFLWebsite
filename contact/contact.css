@@ -60,6 +60,7 @@ input#mail:focus:invalid {
     background-origin: padding-box;
 }
 
+/*2.4.2 - b - Contact page*/
 article > form input[type=submit] {
     display: inline-block;
     padding: 0.8em 1.5em;
