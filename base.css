@@ -141,6 +141,7 @@ nav.horizontalRight > ul > li {
     box-shadow: 1px 1px 2px white;
 }
 
+/*2.4.2 - b*/
 .submenu a {
     color: white
 }
@@ -149,6 +150,7 @@ nav.horizontalRight > ul > li {
     border-bottom: 1px solid white;
 }
 
+/*2.4.2 - b*/
 .subTitle:hover + ul.submenu, ul.submenu:hover {
     display: block;
 }
@@ -227,6 +229,7 @@ nav > ul > li > a:link, nav > ul > li > a:visited {
     color: rgb(0, 112, 224);
 }
 
+/*2.4.2 - b*/
 nav > ul > li > a:hover, nav > ul > li > a:active{
     border-bottom: 1px solid rgb(235, 106, 0);
     padding: 2px;
