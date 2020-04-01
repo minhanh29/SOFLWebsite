@@ -57,7 +57,7 @@ div.member:first-of-type::after {
 .member > img {
     display: block;
     margin-top: 0px;
-    box-shadow: 2px 2px 3px gray;
+    box-shadow: 2px 2px 3px gray;   /*2.4.2 - i - About page*/
 }
 
 .member h2 {
