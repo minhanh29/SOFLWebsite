@@ -120,6 +120,10 @@ img#staticImg {
     border-right: none;
 }
 
+#glossary > h3{
+    text-shadow: 1px 1px 2px rgb(0, 53, 105);    /*2.4.2 - i - About page*/
+}
+
 dt {
     margin: 1em;
     margin-bottom: 0.5em;
