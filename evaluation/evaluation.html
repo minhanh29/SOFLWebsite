@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!--This page allows users to send us messages-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>SOFL Production | Evaluation Form</title>
+        <link href="../reset.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../base.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="evaluation.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../layout.css" rel="stylesheet" type="text/css" media="all" />
+
+        <script src="../baseScript.js" defer></script>
+        <script src="evaluation.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <div class="fixed">
+                <div class="section">
+                    <a href="../index.html"><img id="logo" src="../home/logo2.png" alt="SOFL Logo"/></a>
+                    <header>
+                        <div class="adjust"></div>
+                        <nav class="horizontalLeft">
+                            <a class="navicon" id="naviconId" onclick="showNav()"><img src="../navicon.png" alt="navicon"/></a>
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a class="subTitle" href="../products/products.html">Products</a>
+                                    <ul class="submenu">
+                                        <li><a href="../products/cards.html">Cards</a></li>
+                                        <li><a href="../products/money.html">Money</a></li>
+                                        <li><a href="../products/straw.html">Straw</a></li>
+                                        <li><a href="../products/coins.html">Coins</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../about/about.html">About</a></li>
+                                <li><a href="../contact/contact.html">Contact</a></li>
+                                <li><a href="../reference/reference.html">Reference</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="horizontalRight">
+                            <ul>
+                                <li><a id="cartLink" onclick="showCart()"><img id="cart" src="../home/cart.png" alt="cart"/></a></li>
+                                <li><a href="../login/login.html">Login</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+            </div>
+
+            <div id="cartContainer">
+                <div id="cartContent">
+                    <button id="exitCart" class="exitButton" onclick="hideCart()">&#10005;</button>
+                    <table id="inforCart">
+                        <caption>YOUR CART</caption>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Product</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cartBody">
+                            <tr>
+                                <td></td>
+                                <td>Your cart is empty</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="2">Total</th>
+                                <th id="total">$0</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <button id="buy" class="exitButton" onclick="purchase()">PURCHASE</button>
+                </div>
+            </div>
+            <div id="cartBg"></div>
+
+            <nav class="sideNav" id="navId">
+                <button id="exit" onclick="hideNav()">&#10005;</button>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../products/products.html">Products</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                    <li><a href="../reference/reference.html">Reference</a></li>
+                </ul>
+            </nav>
+            <div id="background"></div>  <!--blur background when navigation list is shown-->
+
+            <h1>Account</h1>
+
+            <div class="article">
+                
+                    <form name="evaluation" action="../index.html" method="post">
+                        <fieldset>
+                            <legend>Website Evaluation</legend>
+
+                            <p>Is the website easy to read? Are the fonts, colors, pictures easy and interesting to look at?</p>
+                            <input type="radio" id="styleYes" name="style" value="yes" checked/>
+                            <label for="styleYes">Yes</label><br/>
+                            <input type="radio" id="styleNo" name="style" value="no"/>
+                            <label for="styleNo">No</label><br/>
+
+                            <p>Is the publisher/organization identified?</p>
+                            <input type="radio" id="idYes" name="identify" value="yes" checked/>
+                            <label for="idYes">Yes</label><br/>
+                            <input type="radio" id="idNo" name="identify" value="no"/>
+                            <label for="idNo">No</label>
+
+                            <p>How much do you agree or disagree with the following statements?</p>
+                            <table>
+                                <tr>
+                                    <th></th>
+                                    <th>Very Dissatisfied</th>
+                                    <th>Dissatisfied</th>
+                                    <th>Neutral</th>
+                                    <th>Satisfied</th>
+                                    <th>Very Satisfied</th>
+                                </tr>
+                                <tr>
+                                    <td class="category">The website is easy to navigate</td>
+                                    <td><input type="radio" id="navSat5" name="navSatisfaction" value="very dissatisfied"/></td>
+                                    <td><input type="radio" id="navSat4" name="navSatisfaction" value="dissatisfied"/></td>
+                                    <td><input type="radio" id="navSat3" name="navSatisfaction" value="neutral"/></td>
+                                    <td><input type="radio" id="navSat2" name="navSatisfaction" value="satisfied"/></td>
+                                    <td><input type="radio" id="navSat1" name="navSatisfaction" value="very satisfied" checked/></td>
+                                </tr>
+                                <tr>
+                                    <td class="category">Menus and content are displayed properly across the website</td>
+                                    <td><input type="radio" id="contSat5" name="contSatisfaction" value="very dissatisfied"/></td>
+                                    <td><input type="radio" id="contSat4" name="contSatisfaction" value="dissatisfied"/></td>
+                                    <td><input type="radio" id="contSat3" name="contSatisfaction" value="neutral"/></td>
+                                    <td><input type="radio" id="contSat2" name="contSatisfaction" value="satisfied"/></td>
+                                    <td><input type="radio" id="contSat1" name="contSatisfaction" value="very satisfied" checked/></td>
+                                </tr>
+                            </table><br/>
+
+                            <label for="favPage" class="blue">Choose the page that you like the most:</label>
+                            <select id="favePage" name="favPage">
+                                <option value="Home">Home</option>
+                                <option value="Porducts">Products</option>
+                                <option value="About">About</option>
+                                <option value="Contact">Contact</option>
+                                <option value="Login">Login</option>
+                            </select><br/>
+
+                            <p>How satisfied were you with your visit on our website?</p>
+                            <input type="radio" id="sat1" name="satisfaction" value="very satisfied" checked/>
+                            <label for="sat1">Very Satisfied</label><br/>
+                            <input type="radio" id="sat2" name="satisfaction" value="satisfied"/>
+                            <label for="sat2">Satisfied</label><br/>
+                            <input type="radio" id="sat3" name="satisfaction" value="neutral"/>
+                            <label for="sat3">Neutral</label><br/>
+                            <input type="radio" id="sat4" name="satisfaction" value="dissatisfied"/>
+                            <label for="sat4">Dissatisfied</label><br/>
+                            <input type="radio" id="sat5" name="satisfaction" value="very dissatisfied"/>
+                            <label for="sat5">Very Dissatisfied</label><br/><br/><br/>
+
+                            <label for="add" class="blue">Mention any features or functionalities that you think we should add on the website.</label><br/>
+                            <textarea id="add" name="add" rows="15"></textarea>
+        
+                            <input type="submit" value="SUBMIT"/>
+                        </fieldset>
+                    </form>
+               
+            </div> 
+
+
+            <table class="bar">
+                    <tr>
+                    <th>Navigation</th>
+                    <td>Contact us for more information</td>
+                    <th>
+                        <a href="https://www.facebook.com/soflmagic" target="_blank"><img src="../home/facebookWhite.png" alt="facebook"/></a>
+                        <a href="https://www.youtube.com/channel/UCLPNja-M_Q9zFdi3XNqbSuw/videos" target="_blank"><img src="../home/youtubeWhite.png" alt="youtube"/></a>
+                    </th>
+                </tr>
+            </table>
+
+            <footer>
+                <div class="vertical">
+                    <h1>Main Menu</h1>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../products/products.html">Products</a></li>
+                        <li><a href="../about/about.html">About</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                        <li><a href="../reference/reference.html">Reference</a></li>
+                    </ul>
+                </div>
+
+                <div class="vertical">
+                    <h1>Social Media</h1>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/soflmagic" target="_blank"><img src="../home/facebookOrange.png" alt="facebook"/>Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCLPNja-M_Q9zFdi3XNqbSuw/videos" target="_blank"><img src="../home/youtubeOrange.png" alt="youtube"/>YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="vertical">
+                    <h1>Subscribe</h1>
+                    <p>Get offers, discounts, announcements, and more...</p>
+                    <form>
+                        <input type="email" id="email" name="email" size="25" placeholder="Enter your email..." />
+                    </form>
+                </div>
+            </footer>
+
+            <div class="footerBar">
+                <a>
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!" />
+                </a>
+
+                <p class="slogan">SOFL Production - Secret Of Fabulous Life</p>
+
+                <p class="floatRight" id="update">Updated &#64;</p>
+            </div>
+        </main>
+    </body>
+</html>

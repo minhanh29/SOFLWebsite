@@ -1,0 +1,90 @@
+@charset "uft-8";
+
+header {
+    border: none;
+}
+
+div.article {
+    margin: 2em auto;
+    width: 80%;
+}
+
+legend {
+    font-size: 2rem;
+    line-height: 1em;
+    color: rgb(0, 112, 224);
+}
+
+form {
+    margin: 3em 0em;
+    font-weight: normal;
+    width: 100%;
+    max-width: 1000px;
+}
+
+form fieldset {
+    border: 1px solid lightgray;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+form p, .blue {
+    color: rgb(0, 112, 224);
+    font-size: 1.1rem;
+    margin-top: 3em;
+}
+
+form input[type=radio] {
+    margin-top: 1.2em;
+}
+
+form table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 1em auto 3em auto;
+}
+
+form table tr:nth-of-type(2) {
+    background-color: rgb(236, 236, 236);
+}
+
+form table th {
+    color: rgb(255, 123, 0);
+}
+
+form table th, form table td {
+    padding: 1em;
+}
+
+.category {
+    text-align: left;
+    width: 25%;
+}
+
+
+form textarea {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid lightgray;
+    font-size: 1rem;
+}
+
+
+form input[type=submit]{
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    font-size: 1rem;
+    width: auto;
+    background: none;
+    background-color: rgb(235, 106, 0);
+    color: white;
+}
+
+form input[type=submit]:hover {
+    background-color: rgb(255, 123, 0);
+    cursor: pointer;
+}
+
+
