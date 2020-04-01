@@ -7,7 +7,7 @@ header {
 .trickList {
     margin: 3em auto;
     width: 80%;
-    display: flex;
+    display: flex;          /*2.4.2 - h - Products page: layout for all the tricks*/
     display: -webkit-flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
