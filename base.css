@@ -1,0 +1,462 @@
+@charset "utf-8";
+/*cart styles*/
+@import url("cart.css");
+
+/* karla-regular - latin */
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/karla-v13-latin-regular.eot'), /* IE9 Compat Modes */ 
+         url('fonts/karla-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/karla-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/karla-v13-latin-regular.ttf') format('ttf'), /* Safari, Android, iOS */
+         url('fonts/karla-v13-latin-regular.svg') format('svg'); /* Legacy iOS */
+}
+
+/*general styles*/
+body {
+    font-family: 'Karla', "HelveticaNeue","Helvetica Neue",sans-serif;
+    letter-spacing: 0.025em;
+    font-size: 1rem;
+    color: rgb(70, 70, 70);
+    background-color: white;
+    width: 100%;
+}
+
+
+main {
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    margin: 0px;
+}
+
+main > h1 {
+    display: block;
+    padding: 0.5em;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    background-color: rgb(235, 106, 0);
+    box-shadow: 0px 2px 2px darkgray;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 75, 145);
+}
+
+button, #cartLink {
+    display: inline-block;
+    cursor: pointer;
+}
+
+img#logo {
+    display: block;
+    float: left;
+    width: 100px;
+    position: absolute;
+    margin-left: 1em;
+    z-index: 10;
+}
+
+.adjust {
+    display:block;
+    min-width: 130px;
+    float: left;
+} 
+
+div.section {
+    display: block;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/*Navigation list Styles*/
+div.fixed {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    color: white;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    z-index: 100;
+    border-bottom: 4px solid rgb(235, 106, 0);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 100px 3fr 1fr;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+nav.horizontalLeft > ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+nav.horizontalLeft > ul > li {
+    display: block;
+    border-left: 1px solid rgb(235, 106, 0);
+    text-align: center;
+}
+
+nav.horizontalRight {
+    margin-right: 4em;
+}
+
+nav.horizontalRight > ul > li {
+    display: block;
+    float:right;
+    margin-right: 1em;
+}
+
+
+/*Submenu styles - for desktop only*/
+.submenu {
+    display: none;
+    position: absolute;
+    width:  150px;
+    padding: 0.5em 0;
+    line-height: 1.5em;
+    background-color: rgb(235, 106, 0);
+    font-weight: normal;
+    border-top-style: solid;
+    border-top-width: 10px;
+    border-image: url("hoverBorder.png") 20 stretch;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 1px 1px 2px white;
+}
+
+.submenu a {
+    color: white
+}
+
+.submenu a:hover, .submenu a:active {
+    border-bottom: 1px solid white;
+}
+
+.subTitle:hover + ul.submenu, ul.submenu:hover {
+    display: block;
+}
+
+/*Mobile Navigation List Styles*/
+a.navicon img {
+    max-width: 40px;
+}
+
+a.navicon:hover {
+    cursor: pointer;
+}
+
+#background {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 101;
+}
+
+.sideNav {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 102;
+    width: 260px;
+    height: 100%;
+    background-color: white;
+    transition: all 0.8s ease;
+}
+
+.sideNav > ul {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.sideNav > ul > li {
+    flex: 1;
+    width: 100%;
+    margin: 0;
+    padding: 2em;
+    border-top: 1px solid rgb(223, 223, 223);
+}
+
+.sideNav a {
+    color: rgb(0, 112, 224);
+    font-size: 1.3em;
+}
+
+.exitButton {
+    margin: 2em;
+    padding: 1em;
+    background-color: rgb(235, 106, 0);
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.exitButton:hover {
+    background-color: rgb(255, 132, 31);
+}
+
+
+/*Link Styles*/
+nav > ul > li > a:link, nav > ul > li > a:visited {
+    color: rgb(0, 112, 224);
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active{
+    border-bottom: 1px solid rgb(235, 106, 0);
+    padding: 2px;
+    position: relative;
+    bottom: 2px;
+}
+
+a#cartLink:hover, a#cartLink:active {
+    border-bottom: none;
+    padding: 0px;
+}
+
+
+/*Bar style*/
+table.bar {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.bar img {
+    height: 20px;
+    margin: 0.7em;
+}
+
+table.bar th {
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgb(235, 106, 0);
+    border: 1px solid rgb(235, 106, 0);
+}
+
+table.bar th:first-of-type {
+    width: 20%;
+}
+
+table.bar th:last-of-type {
+    width: 15%;
+}
+
+table.bar td {
+    color: rgb(235, 106, 0);
+    padding-left: 1em;
+    background-color: rgb(245, 245, 245);
+    font-weight: 500;
+    border: 1px solid lightgray;
+}
+
+/*magic trick styles*/
+.trick {
+    display: block;
+    padding: 2em;
+    border: 1px solid lightgray;
+    line-height: 1.5em;
+    position: relative;
+
+}
+
+.trick img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.trick a p {
+    color: rgb(235, 106, 0);
+    font-weight: bold;
+}
+
+.overlay {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 2em;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    margin-top: 2em;
+}
+
+.button button{
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+button img {
+    max-width: 20px;
+    float: left;
+    position: relative;
+    top: 5px;
+    left: 25%;
+    margin-right: 1em;
+}
+
+button span {
+    position: relative;
+    top: 7px;
+}
+
+
+/*footer styles*/
+footer {
+    position: relative;
+    padding: 40px;
+    background-color: rgb(253, 253, 253);
+    color: rgb(105, 105, 105);
+    font-size: 15px;
+    line-height: 2em;
+}
+
+footer h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(235, 106, 0);
+}
+
+footer img {
+    display: inline-block;
+    width: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+}
+
+footer a:hover, footer a:active {
+    text-decoration: underline;
+}
+
+.vertical {
+    display: block;
+    float: left;
+    margin-left: 10%;
+}
+
+.vertical:nth-of-type(2) ul {
+    line-height: 3em;
+}
+
+.vertical:nth-of-type(2) img {
+    margin-right: 1em;
+}
+
+.vertical:last-of-type {
+    float: right;
+    margin-bottom: 2em;
+    line-height: 2em;
+}
+
+/*Subscribed email*/
+input#email {
+    padding: 1em;
+    padding-right: 10em;
+    margin-top: 1em;
+    border: 1px solid rgb(235, 106, 0);
+    background-color: transparent;
+    color: rgb(117, 117, 117);
+}
+
+input#email::-webkit-input-placeholder { /* Edge */
+    color: rgb(117, 117, 117);
+}
+
+input#email::placeholder { 
+    color: rgb(117, 117, 117);
+}
+
+input#email:focus:valid {
+    background: rgb(240, 255, 243) url("home/valid.png") bottom right/contain no-repeat;
+    background-origin: padding-box;
+}
+
+input#email:focus:invalid {
+    background: rgb(255, 243, 240) url("home/invalid.png") bottom right/contain no-repeat;
+    background-origin: padding-box;
+}
+
+footer::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/*footer bar*/
+.footerBar {
+    clear: both;
+    display: block;
+    position: relative;
+    background-color:rgb(235, 106, 0);
+    padding: 1.5em;
+    color: white;
+    font-weight: bold;
+}
+
+.footerBar > p.floatRight {
+    display: block;
+    float: right;
+    font-style: italic;
+    margin: 0.5em;
+}
+
+.footerBar > p.slogan {
+    display: block;
+    clear: right;
+    position: absolute;
+    top: 2em;
+    left: 120px;
+    line-height: 1.5em;
+}
+
+.footerBar > p.slogan::before {
+    content: "\00A9  2020 ";
+}
+
+
+
+
+
+
+
+
+
