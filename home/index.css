@@ -22,8 +22,9 @@ div.infor > div > div > h2, #welcome h2 {
 
 figure.product  {
     position: relative;
-    background-image: url("homebG.webp");
-    background-size: cover;
+    background-image: url("homebG.webp");   /*2.4.2 - a - Home -> Intro images: prevent image from streching too big*/ 
+    background-size: cover; 
+    max-height: 300px;
 }
 
 figure.product img {
@@ -129,6 +130,7 @@ figure.product figcaption {
     margin-bottom: 0.3em;
 }
 
+/*2.4.2 - a - Home -> Welcome section*/ 
 #welcome p {
     display: block;
     text-align: justify;
