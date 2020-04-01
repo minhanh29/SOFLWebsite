@@ -54,7 +54,8 @@ figure.product figcaption {
     margin-left: 2em;
     padding: 0.7em;
     color: white;
-    background-color: hsla(220, 0%, 75%, 0.5);  /*2.4.2 - c*/
+    background-color: hsla(220, 0%, 75%, 0.5);  /*2.4.2 - c - Home page -> Swipe the intro image below the navigation list to see the button "BUY NOW"*/
+    background-color: rgba(191, 191, 191, 0.5);
     border: 2px solid white;
     font-size: 1rem;
 }
