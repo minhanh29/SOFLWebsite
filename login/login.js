@@ -48,7 +48,7 @@ function validateForm(name) {
     }
 
     if (blank > 0) {
-        window.alert("Please fill out all the fields marked with *");  /*2.4.6 - d*/ 
+        window.alert("Please fill out all the fields marked with *");  /*2.4.6 - d - Login page*/ 
         return false;
     }
     else if (error > 0) {
