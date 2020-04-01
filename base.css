@@ -136,8 +136,8 @@ nav.horizontalRight > ul > li {
     font-weight: normal;
     border-top-style: solid;
     border-top-width: 10px;
-    border-image: url("hoverBorder.png") 20 stretch;
-    border-radius: 0 0 20px 20px;
+    border-image: url("hoverBorder.png") 20 stretch;    /*2.4.2 - e - hover the "Products" link in the navigation list to see the effect*/
+    border-radius: 0 0 20px 20px;                       /*it is the small triangle on top of the submenu*/
     box-shadow: 1px 1px 2px white;
 }
 
