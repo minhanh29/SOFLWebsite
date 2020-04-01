@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+div.article {
+    margin: 2em auto;
+    line-height: 2em;
+    width: 80%;
+}
+
+
+/*Main section*/
+div.article > ol {
+    list-style: none;
+    counter-reset: first-counter; 
+}
+
+div.article > ol > li {
+    counter-increment: first-counter;
+}
+
+div.article > ol > li > h2 {
+    color: rgb(0, 112, 224);
+    font-size: 1.5rem;
+}
+
+div.article > ol > li > h2::before {
+    content: "2." counter(first-counter) ". ";
+    font-weight: bold;
+    color: rgb(0, 112, 224);
+    font-size: 1.5rem;
+}
+
+/*Second level section*/
+.second > li {
+    margin-left: 2em;
+    margin-bottom: 2em;
+} 
+
+.second > li > h3 {
+    color: rgb(235, 106, 0);
+}
+
+/*Second level unorder list*/
+ul.second > li > h3::before {
+    content: "\2022" " ";
+    color: rgb(235, 106, 0);
+    font-weight: bold;
+    width: 1em;
+}
+
+/*Second level order list*/
+ol.second {
+    list-style: none;
+    counter-reset: second-counter; 
+}
+
+ol.second > li {
+    counter-increment: second-counter;
+}
+
+ol.second > li > h3::before {
+    content: "2.4." counter(second-counter) ". ";
+    font-weight: bold;
+    color: rgb(235, 106, 0);
+}
+
+/*Third level section*/
+.third > li {
+    list-style-type: lower-alpha;
+    margin-left: 3em;
+}
+
+/*Fourth level section*/
+.fourth > li {
+    list-style-type: lower-roman;
+    margin-left: 2em;
+}
+
+/*Hyperlink*/
+.article a:link, .section a:visited {
+    font-weight: bold;
+    
+}
+
+.article a:hover, .section a:active {
+    text-decoration: underline;
+}

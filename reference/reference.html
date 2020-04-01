@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--This page is about the member's information-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>SOFL Production | Reference</title>
+        <link href="../reset.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../base.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="reference.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../layout.css" rel="stylesheet" type="text/css" media="all" />
+
+        <script src="../baseScript.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <div class="fixed">
+                <div class="section">
+                    <a href="../index.html"><img id="logo" src="../home/logo2.png" alt="SOFL Logo"/></a>
+                    <header>
+                        <div class="adjust"></div>
+                        <nav class="horizontalLeft">
+                            <a class="navicon" id="naviconId" onclick="showNav()"><img src="../navicon.png" alt="navicon"/></a>
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a class="subTitle" href="../products/products.html">Products</a>
+                                    <ul class="submenu">
+                                        <li><a href="../products/cards.html">Cards</a></li>
+                                        <li><a href="../products/money.html">Money</a></li>
+                                        <li><a href="../products/straw.html">Straw</a></li>
+                                        <li><a href="../products/coins.html">Coins</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../about/about.html">About</a></li>
+                                <li><a href="../contact/contact.html">Contact</a></li>
+                                <li><a href="../reference/reference.html">Reference</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="horizontalRight">
+                            <ul>
+                                <li><a id="cartLink" onclick="showCart()"><img id="cart" src="../home/cart.png" alt="cart"/></a></li>
+                                <li><a href="../login/login.html">Login</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+            </div>
+
+            <div id="cartContainer">
+                <div id="cartContent">
+                    <button id="exitCart" class="exitButton" onclick="hideCart()">&#10005;</button>
+                    <table id="inforCart">
+                        <caption>YOUR CART</caption>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Product</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cartBody">
+                            <tr>
+                                <td></td>
+                                <td>Your cart is empty</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="2">Total</th>
+                                <th id="total">$0</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <button id="buy" class="exitButton" onclick="purchase()">PURCHASE</button>
+                </div>
+            </div>
+            <div id="cartBg"></div>
+
+            <nav class="sideNav" id="navId">
+                <button id="exit" onclick="hideNav()">&#10005;</button>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../products/products.html">Products</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                    <li><a href="../reference/reference.html">Reference</a></li>
+                </ul>
+            </nav>
+            <div id="background"></div>  <!--blur background when navigation list is shown-->
+
+            <h1>Reference</h1>
+
+            <div class="article">
+                <ol>
+                    <li><h2>9 Required Web Sites</h2>
+                        <ul class="second">
+                            <li><h3>3 Similar sites to my site</h3>
+                                <ol class="third">
+                                    <li><a href="https://www.sansminds.com/">Sansminds: </a> The layout is very mordern and professional, which satisfies the user's eyes.</li>
+                                    <li><a href="https://www.patrickkun.com/">Patrick Kun: </a> In mobile mode, the navigator list appears on the right side covering the full height of the screen, which is very convenient and professional.</li>
+                                    <li><a href="https://www.vanishingincmagic.com/">Vanishing Inc: </a> There is a list of tricks on the left side, which is very convenient to browse.</li>
+                                </ol>
+                            </li>
+
+                            <li><h3>3 Downloadable Sites</h3>
+                                <ol class="third">
+                                    <li><a href="https://unsplash.com/">Unsplash: </a> This site has a variety of images that meet almost all my needs.</li>
+                                    <li><a href="https://www.youtube.com/channel/UCLPNja-M_Q9zFdi3XNqbSuw/videos">SOFL Profuction: </a> This is my main video source. The videos are edited very professionally.</li>
+                                    <li><a href="https://www.vanishingincmagic.com/">Vanishing Inc: </a> There is a list of tricks on the left side, which is very convenient to browse.</li>
+                                </ol>
+                            </li>
+
+                            <li><h3>3 Sites for Technical Information</h3>
+                                <ol class="third">
+                                    <li><a href="https://www.w3schools.com/">W3Schools: </a> This is my main source of information, which is very good at building the basics.</li>
+                                    <li><a href="https://www.tutorialspoint.com/">Tutorials Point: </a> This source is good for browsing advanced attributes.</li>
+                                    <li><a href="https://javascript.info/">JavaScript Infor: </a> The site focuses on JavaScript only. Everything from basic to advanced is organised and explained very well.</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li></li><li></li> <!--skip section 2 and 3-->
+
+                    <li><h2>Minimum Requirements Features</h2>
+                        <ol class="second">
+                            <li><h3>HTML5</h3>
+                                <ol class="third">
+                                    <li>Appropriate HTML5 tags, including use of HTML5 structural tags, <a href="../index.html#cartLink">&#60a&#62</a>, <a href="../about/about.html#pTag">&#60p&#62</a>, 
+                                        <a href="../about/about.html#h2Tag">&#60hn&#62</a>, <a href="../about/about.html#bqTag">&#60blockquote&#62</a>, <a href="../products/straw/strawing/strawing.html#olTag">&#60ol&#62</a>, 
+                                        <a href="../index.html#ulTag">&#60ul&#62</a>, <a href="../about/about.html#glossary">&#60dd&#62</a> to name a few.</li>
+                                    <li>Inline images both <a href="../about/about.html#staticImg">static</a> and <a href="../index.html#clickableImg">clickable</a>.</li>
+                                    <li>Use of appropriate <a href="../login/login.html#specialChar">special characters</a>.</li>
+                                    <li>Use of appropriate <a href="../index.html">&#60meta&#62</a> tags.</li>
+                                    <li>A footer on the home page indicating when the web site was <a href="../index.html#update">last updated or modified</a>.</li>
+                                </ol>
+                            </li>
+
+                            <li><h3>CSS3</h3>
+                                <ol class="third">
+                                    <li>Use CSS3 to format the appearance of paragraphs, lists, headers, 
+                                        background images, tables, forms.</li>
+                                    <li>Use CSS3 contextual selectors (e1, e2, e3; e f; e > f; e + f) 
+                                        and at least two attribute selectors, excluding class and id attribute selectors.</li>
+                                    <li>Use of CSS3 styles for color (RGBA & HSLA).</li>
+                                    <li>Use of dynamic pseudo-classes to highlight hyperlinks states of link, visited, active, hover; 
+                                        focus and two structural pseudo-classes: first-of-type and last-of-type.</li>
+                                    <li>Use of CSS3 background styles (background size, background-clip, background-origin, padding, 
+                                        margins, borders, use of an appropriate border style, use of rounded corners).</li>
+                                    <li>Your home page should have a drop cap created with CSS3.</li>
+                                    <li>Define document content with the class and id properties and create styles for them.</li>
+                                    <li>Use cascading styles to control page layout by using either grid, flex, float, positioning. 
+                                        The use of framework for layout is discouraged due to too many unknown factors.</li>
+                                    <li>Use of CSS3 text and box shadows.</li>
+                                    <li>Use of CSS3 transform rotate feature.</li>
+                                    <li>Use of CSS3 opacity applied to two images to appear semi-transparent.</li>
+                                </ol>
+                            </li>
+
+                            <li><h3>Web Form</h3>
+                                <ol class="third">
+                                    <li>Use of appropriate form elements including some of the new HTML5 form elements.</li>
+                                    <li>Apply appropriate styles to Web Forms.</li>
+                                    <li>Apply inline form validation by using the focus pseudo-class to appropriate form elements.</li>
+                                </ol>
+                            </li>
+
+                            <li><h3>Graphical Web Tables</h3>
+                                <ol class="third">
+                                    <li>Use of graphical web tables to depict relevant data that is appropriate to the business.</li>
+                                </ol>
+                            </li>
+
+                            <li><h3>Multimedia Minimum</h3>
+                                <ol class="third">
+                                    <li>Use sound, video somewhere on your site. Ensure these are of short duration preferably about 30 seconds.</li>
+                                    <li>Use of transitions and animations.</li>
+                                </ol>
+                            </li>
+
+                            <li><h3>JavaScript</h3>
+                                <ol class="third">
+                                    <li>Use of variables, arithmetic, comparison and logical operators, subroutines, functions, arrays,
+                                         conditional statements, conditional operators, running time commands with system clock.</li>
+                                    <li>Use of system date (example: clock, countdown timer to an event) on your web site.</li>
+                                    <li>Validating form input by using appropriate JavaScript functions.</li>
+                                    <li>Use of JavaScript alerts for validation purposes.</li>
+                                    <li>Use of BOM/DOM in emulating events through the use of event handlers.</li>
+                                </ol>
+                            </li>
+
+                            <li><h3>Responsive Design</h3>
+                                <ol class="third">
+                                    <li>Your web site design should implement each of the following responsive techniques on different pages on your web site:
+                                        <ol class="fourth">
+                                            <li>CSS Grid Layout using the display: grid</li>
+                                            <li>CSS Flex Layout using the display: flex</li>
+                                            <li>CSS Positioning.</li>
+                                        </ol>
+                                    </li>
+                                    <li>The use of contextual selectors to control sub level menus, including the use of a navicon image for mobile design is required.</li>
+                                </ol>
+                            </li>
+
+                            <li><h3>Call to Action (CTAs)</h3>
+                                <ol class="third">
+                                    <li>CTA 1</li>
+                                    <li>CTA 2</li>
+                                    <li>CTA 3</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li></li>
+
+                    <li><h2><a href="../evaluation/evaluation.html">Demonstration Evaluation Form (Click here)</a></h2></li>
+                </ol>
+            </div>
+
+            <table class="bar">
+                    <tr>
+                    <th>Navigation</th>
+                    <td>Contact us for more information</td>
+                    <th>
+                        <a href="https://www.facebook.com/soflmagic" target="_blank"><img src="../home/facebookWhite.png" alt="facebook"/></a>
+                        <a href="https://www.youtube.com/channel/UCLPNja-M_Q9zFdi3XNqbSuw/videos" target="_blank"><img src="../home/youtubeWhite.png" alt="youTube"/></a>
+                    </th>
+                </tr>
+            </table>
+
+            <footer>
+                <div class="vertical">
+                    <h1>Main Menu</h1>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../products/products.html">Products</a></li>
+                        <li><a href="../about/about.html">About</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                        <li><a href="../reference/reference.html">Reference</a></li>
+                    </ul>
+                </div>
+
+                <div class="vertical">
+                    <h1>Social Media</h1>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/soflmagic" target="_blank"><img src="../home/facebookOrange.png" alt="facebook"/>Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCLPNja-M_Q9zFdi3XNqbSuw/videos" target="_blank"><img src="../home/youtubeOrange.png" alt="youTube"/>YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="vertical">
+                    <h1>Subscribe</h1>
+                    <p>Get offers, discounts, announcements, and more...</p>
+                    <form>
+                        <input type="email" id="email" name="email" size="25" placeholder="Enter your email..." />
+                    </form>
+                </div>
+            </footer>
+
+            <div class="footerBar">
+                <a>
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!" />
+                </a>
+
+                <p class="slogan">SOFL Production - Secret Of Fabulous Life</p>
+
+                <p class="floatRight" id="update">Updated &#64;</p>
+            </div>
+        </main>
+    </body>
+</html>
