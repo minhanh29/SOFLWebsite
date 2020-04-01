@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>SOFL Production | Virtual Straw</title>
+        <link href="../../../reset.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../../../base.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../../trick.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../../../layout.css" rel="stylesheet" type="text/css" media="all" />
+
+        <script src="../../../baseScript.js" defer></script>
+        <script src="../../../cart.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <div class="fixed">
+                <div class="section">
+                    <a href="../../../index.html"><img id="logo" src="../../../home/logo2.png" alt="SOFL Logo"/></a>
+                    <header>
+                        <div class="adjust"></div>
+                        <nav class="horizontalLeft">
+                            <a class="navicon" id="naviconId" onclick="showNav()"><img src="../../../navicon.png" alt="navicon"/></a>
+                            <ul>
+                                <li><a href="../../../index.html">Home</a></li>
+                                <li><a class="subTitle" href="../../../products/products.html">Products</a>
+                                    <ul class="submenu">
+                                        <li><a href="../../../products/cards.html">Cards</a></li>
+                                        <li><a href="../../../products/money.html">Money</a></li>
+                                        <li><a href="../../../products/straw.html">Straw</a></li>
+                                        <li><a href="../../../products/coins.html">Coins</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../../../about/about.html">About</a></li>
+                                <li><a href="../../../contact/contact.html">Contact</a></li>
+                                <li><a href="../../../reference/reference.html">Reference</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="horizontalRight">
+                            <ul>
+                                <li><a id="cartLink" onclick="showCart()"><img id="cart" src="../../../home/cart.png" alt="cart"/></a></li>
+                                <li><a href="../../../login/login.html">Login</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+            </div>
+
+            <div id="cartContainer">
+                <div id="cartContent">
+                    <button id="exitCart" class="exitButton" onclick="hideCart()">&#10005;</button>
+                    <table id="inforCart">
+                        <caption>YOUR CART</caption>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Product</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cartBody">
+                            <tr>
+                                <td></td>
+                                <td>Your cart is empty</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="2">Total</th>
+                                <th id="total">$0</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <button id="buy" class="exitButton" onclick="purchase()">PURCHASE</button>
+                </div>
+            </div>
+            <div id="cartBg"></div>
+
+            <nav class="sideNav" id="navId">
+                <button id="exit" onclick="hideNav()">&#10005;</button>
+                <ul>
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../../products/products.html">Products</a></li>
+                    <li><a href="../../../about/about.html">About</a></li>
+                    <li><a href="../../../contact/contact.html">Contact</a></li>
+                    <li><a href="../../../reference/reference.html">Reference</a></li>
+                </ul>
+            </nav>
+            <div id="background"></div>  <!--blur background when navigation list is shown-->
+
+            <h1>Shopping</h1>
+
+            <article>
+                    <div class="main">
+                        <div class="media">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/HzzSV_rFP5w" allowfullscreen></iframe>
+                        </div>
+    
+                        <div class="purchase">
+                            <a href="#">
+                                <img src="virtual_straw.webp" alt="virtual"/>
+                                <h2>VIRTUAL STRAW</h2>
+                                <h3>Straw Color Change</h3>
+                                <p>$10.00</p>
+                            </a>
+    
+                            <div>
+                                <button name="virtualStraw">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mediaImg">
+                        <img src="vs1.webp" alt="preview1"/>
+                        <img src="vs2.webp" alt="preview2"/>
+                        <img src="vs3.webp" alt="preview3"/>
+                    </div>
+
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Virtual Straw allows you to change your straw color slowly just by waving your fingers.</p><br/>
+
+                        <p><b>What will you receive?</b></p>
+                        <p>One high-quality tutorial video that guides you to do the trick step by step with intricate detail.</p><br/>
+
+                        <p><b>Features:</b></p>
+                        <ol id="olTag">
+                            <li>No magnets.</li> 
+                            <li>No special materials.</li>
+                            <li>Fully examinable.</li>
+                        </ol><br/>
+
+                        <p><b>Get your tutorial now!</b></p>
+
+
+                        <h2>Reviews</h2>
+                        <p>No reviews yet.</p>
+                        <p>Login and buy the product to leave your review.</p>
+                    </div>
+
+                    <h2>You may also like</h2>
+                    <div class="recommendation">
+                        <article class="trick">
+                            <a href="../../straw/strawing/strawing.html">
+                                <img src="../../straw/strawing/strawingBg.webp" alt="strawing"/>
+                                <div class="overlay">
+                                    <img src="../../straw/strawing/strawingOverlay.webp" alt="preview">
+                                </div>
+                                <h2>STRAWING</h2>
+                                <h3>Move Drawing on Straw</h3>
+                                <p>$10</p>
+                            </a>
+    
+                            <div class="button">
+                                <button name="strawing"><img src="../../cartWhite.png" alt="cart"/><span>ADD</span></button>
+                                <button name="strawing">BUY NOW</button>
+                            </div>
+                        </article>
+
+                        <article class="trick">
+                            <a href="../../money/money_swap/money_swap.html">
+                                <img src="../../money/money_swap/money_swap.webp" alt="money"/>
+                                <div class="overlay">
+                                    <img src="../../money/money_swap/money_swapOverlay.webp" alt="preview">
+                                </div>
+                                <h2>MONEY SWAP</h2>
+                                <h3>Money Color Change (No Gimmick)</h3>
+                                <p>$8</p>
+                            </a>
+    
+                            <div class="button">
+                                <button name="moneySwap"><img src="../../cartWhite.png" alt="cart"/><span>ADD</span></button>
+                                <button name="moneySwap">BUY NOW</button>
+                            </div>
+                        </article>
+
+                        <article class="trick">
+                            <a href="../../money/swapper/swapper.html">
+                                <img src="../../money/swapper/swapper.webp" alt="swapper"/>
+                                <div class="overlay">
+                                    <img src="../../money/swapper/swapperOverlay.webp" alt="preview">
+                                </div>
+                                <h2>SWAPPER</h2>
+                                <h3>Lottery Ticket Color Change</h3>
+                                <p>$15</p>
+                            </a>
+    
+                            <div class="button">
+                                <button name="swapper"><img src="../../cartWhite.png" alt="cart"/><span>ADD</span></button>
+                                <button name="swapper">BUY NOW</button>
+                            </div>
+                        </article>
+                    </div>
+            </article> 
+
+            <table class="bar">
+                    <tr>
+                    <th>Navigation</th>
+                    <td>Contact us for more information</td>
+                    <th>
+                        <a href="https://www.facebook.com/soflmagic" target="_blank"><img src="../../../home/facebookWhite.png" alt="facebook"/></a>
+                        <a href="https://www.youtube.com/channel/UCLPNja-M_Q9zFdi3XNqbSuw/videos" target="_blank"><img src="../../../home/youtubeWhite.png" alt="youTube"/></a>
+                    </th>
+                </tr>
+            </table>
+
+            <footer>
+                <div class="vertical">
+                    <h1>Main Menu</h1>
+                    <ul>
+                        <li><a href="../../../index.html">Home</a></li>
+                        <li><a href="../../../products/products.html">Products</a></li>
+                        <li><a href="../../../about/about.html">About</a></li>
+                        <li><a href="../../../contact/contact.html">Contact</a></li>
+                        <li><a href="../../../reference/reference.html">Reference</a></li>
+                    </ul>
+                </div>
+
+                <div class="vertical">
+                    <h1>Social Media</h1>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/soflmagic" target="_blank"><img src="../../../home/facebookOrange.png" alt="facebook"/>Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCLPNja-M_Q9zFdi3XNqbSuw/videos" target="_blank"><img src="../../../home/youtubeOrange.png" alt="youTube"/>YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="vertical">
+                    <h1>Subscribe</h1>
+                    <p>Get offers, discounts, announcements, and more...</p>
+                    <form>
+                        <input type="email" id="email" name="email" size="25" placeholder="Enter your email..." />
+                    </form>
+                </div>
+            </footer>
+
+            <div class="footerBar">
+                <a>
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!" />
+                </a>
+
+                <p class="slogan">SOFL Production - Secret Of Fabulous Life</p>
+
+                <p class="floatRight" id="update">Updated &#64;</p>
+            </div>
+
+            <p id="sound">../../../addItem.mp3</p>
+        </main>
+    </body>
+</html>
