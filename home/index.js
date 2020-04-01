@@ -6,7 +6,7 @@
 setInterval("showClock()", 1000);
 function showClock () {
     var currentTime = new Date();
-    var eventTime = new Date("April 9, 2020 8:00:00");
+    var eventTime = new Date("April 30, 2020 8:00:00");
     
     var daysLeft = (eventTime - currentTime)/(1000*60*60*24);
     var hrsLeft = (daysLeft - Math.floor(daysLeft))*24;
