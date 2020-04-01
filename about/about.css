@@ -211,15 +211,14 @@ article::after {
         margin-left: 4em;
     }
 
-    /* 2.4.2 - j transform rotate - About page */
     #minhanhMember {
         perspective: 1000px;
     }
 
     #minhanh {
         width: 30%;
-        transform: rotateY(20deg);
-        animation: rotation 2s linear;    /* 2.4.5 - b animation*/
+        transform: rotateY(20deg);      /* 2.4.2 - j - About page */
+        animation: rotation 2s linear;    /* 2.4.5 - b - About page*/
     }
 
     @keyframes rotation {
