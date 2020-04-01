@@ -41,6 +41,7 @@ img#cart {
     background-color: white;
 }
 
+/*2.4.2 - a - Home, Products -> click the shopping cart button to see the table*/
 #cartContent > table {
     width: 100%;
     text-align: left;
