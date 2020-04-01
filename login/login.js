@@ -88,13 +88,11 @@ function setConfirmedPass() {
 
     //update the input background when the user's confirming password
     conPass.addEventListener("input", function(event) {
-        //check if the passwords match
-        if (conPass.value == pass.value) {
-            conPass.style.background = "rgb(240, 255, 243) url('../home/valid.png') bottom right/contain no-repeat";
-        }
-        else {
-            conPass.style.background = "rgb(255, 243, 240) url('../home/invalid.png') bottom right/contain no-repeat";
-        }
+        var valid = "rgb(240, 255, 243) url('../home/valid.png') bottom right/contain no-repeat";
+        var invalid = "rgb(255, 243, 240) url('../home/invalid.png') bottom right/contain no-repeat";
+
+        //check if the passwords match and apply appropriate background 
+        conPass.style.background = (conPass.value == pass.value) ? valid : invalid;   /*2.4.6 - a - Login page*/
     });
 
     //remove background when the input is unfocus
@@ -109,7 +107,7 @@ function setConfirmedPass() {
 //remove the previous mesaage
 function removeMessage(element) {
     var p = element.previousElementSibling;
-    if (p != null && p.nodeName == "P") {
+    if (p != null && p.nodeName == "P") {       /*2.4.6 - a - Login page*/
         p.remove();
     }
 }
