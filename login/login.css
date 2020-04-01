@@ -26,7 +26,7 @@ legend {
     color: rgb(0, 112, 224);
 }
 
-/*2.4.2 - a - Login page*/
+/*2.4.2 - a, 2.4.3 - c - Login page*/
 div.article form {
     margin: 3em 0em;
     font-weight: normal;
@@ -56,7 +56,7 @@ div.article form input, div.article form textarea {
     font-size: 1rem;
 }
 
-/*2.4.2 - c - Login page*/
+/*2.4.3 - c - Login page*/
 input:focus:valid {
     background: rgb(240, 255, 243) url("../home/valid.png") bottom right/contain no-repeat;
     background-origin: padding-box;
