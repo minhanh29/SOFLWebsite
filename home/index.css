@@ -140,7 +140,7 @@ figure.product figcaption {
     margin-bottom: 1em;
 }
 
-/*2.4.2 - i - Drop Cap: Home -> Welcome section*/
+/*2.4.2 - f - Drop Cap: Home -> Welcome section*/
 #welcome p::first-letter {    
     float: left;
     font-size: 5rem;
