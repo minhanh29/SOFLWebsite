@@ -262,6 +262,7 @@ table.bar th {
     border: 1px solid rgb(235, 106, 0);
 }
 
+/*2.4.2 - d - The orange bar below the intro images*/
 table.bar th:first-of-type {
     width: 20%;
 }
