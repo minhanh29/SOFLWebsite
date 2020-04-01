@@ -47,6 +47,7 @@ div.article form label {
     font-size: 1rem;
 }
 
+/*2.4.2 - b*/
 div.article form input, div.article form textarea {
     width: 100%;
     padding: 1em;
