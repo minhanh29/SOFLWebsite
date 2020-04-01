@@ -69,7 +69,7 @@ div.member:first-of-type::after {
 img.transparent {
     position: absolute;
     bottom: 0;
-    opacity: 0.4;    /*2.4.2 - k - semi-transparent images*/
+    opacity: 0.4;    /*2.4.2 - k - 2 images in the About page*/
     width: 10%;
     max-width: 300px;
     box-shadow: none;
