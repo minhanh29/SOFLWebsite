@@ -224,6 +224,7 @@ a.navicon:hover {
 }
 
 
+/*2.4.2 - d - Navigation list*/
 /*Link Styles*/
 nav > ul > li > a:link, nav > ul > li > a:visited {
     color: rgb(0, 112, 224);
