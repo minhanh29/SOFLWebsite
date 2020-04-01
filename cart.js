@@ -1,6 +1,7 @@
 /*Cart Functions*/
 //Add numbers of items to the cart icon
 var countItem = 0;   //set the number of items purchased
+/*2.4.6 - a - shopping cart*/
 var cart = new Array(); //contain which item has been added
 
 //examine if value is in the array
@@ -116,6 +117,7 @@ function updateTotal() {
     var prices = document.getElementsByClassName("price");
     var total = 0;
 
+    /*2.4.6 - a - shopping cart*/
     for (var i = 0; i < prices.length; i++) {
         total += parseFloat(prices[i].textContent.slice(1));   //remove the $ and add the price to total
     }
