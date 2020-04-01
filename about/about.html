@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--This page is about the member's information-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>SOFL Production | About</title>
+        <link href="../reset.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../base.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="about.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../layout.css" rel="stylesheet" type="text/css" media="all" />
+
+        <script src="../baseScript.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <div class="fixed">
+                <div class="section">
+                    <a href="../index.html"><img id="logo" src="../home/logo2.png" alt="SOFL Logo"/></a>
+                    <header>
+                        <div class="adjust"></div>
+                        <nav class="horizontalLeft">
+                            <a class="navicon" id="naviconId" onclick="showNav()"><img src="../navicon.png" alt="navicon"/></a>
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a class="subTitle" href="../products/products.html">Products</a>
+                                    <ul class="submenu">
+                                        <li><a href="../products/cards.html">Cards</a></li>
+                                        <li><a href="../products/money.html">Money</a></li>
+                                        <li><a href="../products/straw.html">Straw</a></li>
+                                        <li><a href="../products/coins.html">Coins</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../about/about.html">About</a></li>
+                                <li><a href="../contact/contact.html">Contact</a></li>
+                                <li><a href="../reference/reference.html">Reference</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="horizontalRight">
+                            <ul>
+                                <li><a id="cartLink" onclick="showCart()"><img id="cart" src="../home/cart.png" alt="cart"/></a></li>
+                                <li><a href="../login/login.html">Login</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+            </div>
+
+            <div id="cartContainer">
+                <div id="cartContent">
+                    <button id="exitCart" class="exitButton" onclick="hideCart()">&#10005;</button>
+                    <table id="inforCart">
+                        <caption>YOUR CART</caption>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Product</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cartBody">
+                            <tr>
+                                <td></td>
+                                <td>Your cart is empty</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="2">Total</th>
+                                <th id="total">$0</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <button id="buy" class="exitButton" onclick="purchase()">PURCHASE</button>
+                </div>
+            </div>
+            <div id="cartBg"></div>
+
+            <nav class="sideNav" id="navId">
+                <button id="exit" onclick="hideNav()">&#10005;</button>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../products/products.html">Products</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                    <li><a href="../reference/reference.html">Reference</a></li>
+                </ul>
+            </nav>
+            <div id="background"></div>  <!--blur background when navigation list is shown-->
+
+            <h1>About</h1>
+
+                <article>
+                    <div class="member">
+                        <video poster="introPoster.webp" controls>
+                            <source src="introduction.mp4" type="video/mp4" >
+                            <p>Your browser does not support video element.</p>
+                        </video>
+                        <div class="detail">
+                            <h2 id="h2Tag">SOFL Production</h2>
+                            <h3>Secret Of Fabulous Life</h3>
+                            
+                            <p id="pTag"> SOFL Production is a start-up business in the magic industry, founded in 2016. We provide the most unique and amazing magic tricks that
+                                can be performed anywhere, such as on street, in the party. There are various types of magic avilable in our stock, like playing cards,
+                                coins, rings, rubber bands, money, straw, etc. The tutorial of each trick was filmed carefully to give you the most intricate instruction
+                                to do the impossible. 
+                            </p>
+                            <blockquote id="bqTag" cite="https://www.lifeintherightdirection.com/dynamo-nothing-is-impossible/"><i>What you see and how your mind perceives it is the magic. Magic only happens in the spectator’s mind.</i> - Dynamo</blockquote>
+                        </div>
+                        <img id="dynamo" class="transparent" src="dynamo.png" alt="dynamo"/>
+                    </div>
+    
+                    <div class="member" id="minhanhMember">
+                        <img id="minhanh" src="minhAnh.webp" alt="Minh Anh"/>
+                        <div class="detail">
+                            <h2>Minh Anh Nguyen - SOFL <img id="staticImg" src="magicIcon.png" alt="magicIcon"/></h2> 
+                            <h3>Founder</h3>
+                            
+                            <p> Minh Anh is one of the most talented magic creators of all time. 
+                                He always comes up with the most unique and stunning ideas that you will never exepcted. Almost all the tricks in this site are created by Minh Anh.
+                                Having practising magic tricks for 7 years, his sleight of hand is so oustanding that his spectators are always blowed their minds by his performances.  
+                            </p>
+                            <blockquote>You think it is possible, then it is possible - SOFL</blockquote>
+                        </div>
+                    </div>
+                    
+
+                    <div class="member" id="glossary">
+                        <h2>Glossary</h2>
+                        <dl>
+                            <dt>Effect</dt>
+                            <dd>A magic trick, what the spectors see but is not real.</dd>
+
+                            <dt>Gimmick</dt>
+                            <dd>An extra tool that a magician uses in the trick but the spectators don't see.</dd>
+
+                            <dt>Penetration</dt>
+                            <dd>The effect that a solid object goes through another solid object.</dd>
+
+                            <dt>Sleight of Hand</dt>
+                            <dd>Magic skills that does not requires the help of gimmicks.</dd>
+                        </dl>
+                    </div>
+                    <img id="minhanhTrans" class="transparent" src="minhanhTrans.png" alt="minh anh"/>
+                </article> 
+
+            <table class="bar">
+                    <tr>
+                    <th>Navigation</th>
+                    <td>Contact us for more information</td>
+                    <th>
+                        <a href="https://www.facebook.com/soflmagic" target="_blank"><img src="../home/facebookWhite.png" alt="facebook"/></a>
+                        <a href="https://www.youtube.com/channel/UCLPNja-M_Q9zFdi3XNqbSuw/videos" target="_blank"><img src="../home/youtubeWhite.png" alt="youTube"/></a>
+                    </th>
+                </tr>
+            </table>
+
+            <footer>
+                <div class="vertical">
+                    <h1>Main Menu</h1>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../products/products.html">Products</a></li>
+                        <li><a href="../about/about.html">About</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                        <li><a href="../reference/reference.html">Reference</a></li>
+                    </ul>
+                </div>
+
+                <div class="vertical">
+                    <h1>Social Media</h1>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/soflmagic" target="_blank"><img src="../home/facebookOrange.png" alt="facebook"/>Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCLPNja-M_Q9zFdi3XNqbSuw/videos" target="_blank"><img src="../home/youtubeOrange.png" alt="youTube"/>YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="vertical">
+                    <h1>Subscribe</h1>
+                    <p>Get offers, discounts, announcements, and more...</p>
+                    <form>
+                        <input type="email" id="email" name="email" size="25" placeholder="Enter your email..." />
+                    </form>
+                </div>
+            </footer>
+
+            <div class="footerBar">
+                <a>
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!" />
+                </a>
+
+                <p class="slogan">SOFL Production - Secret Of Fabulous Life</p>
+
+                <p class="floatRight" id="update">Updated &#64;</p>
+            </div>
+        </main>
+    </body>
+</html>
