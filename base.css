@@ -105,7 +105,7 @@ header {
 /*2.4.2 - a - Home page -> navigation list*/
 nav.horizontalLeft > ul {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);  /*2.4.2 - h - navigation list*/
 }
 
 nav.horizontalLeft > ul > li {
@@ -120,7 +120,7 @@ nav.horizontalRight {
 
 nav.horizontalRight > ul > li {
     display: block;
-    float:right;
+    float:right;        /*2.4.2 - h - navigation list*/
     margin-right: 1em;
 }
 
@@ -128,7 +128,7 @@ nav.horizontalRight > ul > li {
 /*Submenu styles - for desktop only*/
 .submenu {
     display: none;
-    position: absolute;
+    position: absolute;     /*2.4.2 - h - navigation list*/
     width:  150px;
     padding: 0.5em 0;
     line-height: 1.5em;
@@ -164,6 +164,7 @@ a.navicon:hover {
     cursor: pointer;
 }
 
+/*2.4.2 - g - Side navigation list: in mobile mode, click the navicon to display the navigation list*/
 #background {
     display: none;
     position: absolute;
