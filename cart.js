@@ -20,7 +20,7 @@ function setAddToCart(className) {
     var items = document.getElementsByClassName(className);  //find all the button containers in the page
 
     for (var i = 0; i < items.length; i++) {   //apply onclick envent to each "Add to cart" button
-        var addButton = items[i].getElementsByTagName("button")[0];
+        var addButton = items[i].getElementsByTagName("button")[0];      /*2.4.6 - e - shopping cart*/
         addButton.addEventListener("click", function() {
                 addItem(this);
         });
