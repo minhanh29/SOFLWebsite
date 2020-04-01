@@ -113,6 +113,7 @@ function removeDecimal(num) {
 } 
 
 //update the total price
+/*2.4.6 - a - shopping cart: this function is used by the addContent() function above*/
 function updateTotal() {
     var prices = document.getElementsByClassName("price");
     var total = 0;
