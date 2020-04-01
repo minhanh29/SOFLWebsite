@@ -308,7 +308,7 @@ table.bar td {
     padding: 2em;
     width: 100%;
     opacity: 0;
-    transition: opacity 0.7s ease;
+    transition: opacity 0.7s ease;   /*2.4.5 - b - Home page, Products page: hover the product preview images to see the transition*/
 }
 
 .overlay:hover {
