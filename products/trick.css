@@ -16,7 +16,7 @@ article > h2, .purchase h2, .description h2 {
     color: rgb(0, 112, 224);
 }
 
-/* 2.4.5 - b animation*/
+/* 2.4.5 - b - Go to the page of each product to see the animation of the shopping cart*/
 @-webkit-keyframes jump{
     0% {top: 0;}
     50% {top: -20px;}
