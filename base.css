@@ -141,7 +141,7 @@ nav.horizontalRight > ul > li {
     box-shadow: 1px 1px 2px white;
 }
 
-/*2.4.2 - b*/
+/*2.4.2 - b, 2.4.7 - b - hover the "Products" link in the navigation list to see the submenu*/
 .submenu a {
     color: white
 }
@@ -156,6 +156,7 @@ nav.horizontalRight > ul > li {
 }
 
 /*Mobile Navigation List Styles*/
+/*2.4.7 - b*/
 a.navicon img {
     max-width: 40px;
 }
