@@ -1,6 +1,6 @@
 "use strict";
 
-/*2.4.6 - c*/ 
+/*2.4.6 - c - Login page*/ 
 //Validate form
 function validateForm(name) {
     var inputs = document.forms[name].getElementsByTagName("input");
