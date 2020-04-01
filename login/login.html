@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--This page allows users to send us messages-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>SOFL Production | Login</title>
+        <link href="../reset.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../base.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="login.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../layout.css" rel="stylesheet" type="text/css" media="all" />
+
+        <script src="../baseScript.js" defer></script>
+        <script src="login.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <div class="fixed">
+                <div class="section">
+                    <a href="../index.html"><img id="logo" src="../home/logo2.png" alt="SOFL Logo"/></a>
+                    <header>
+                        <div class="adjust"></div>
+                        <nav class="horizontalLeft">
+                            <a class="navicon" id="naviconId" onclick="showNav()"><img src="../navicon.png" alt="navicon"/></a>
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a class="subTitle" href="../products/products.html">Products</a>
+                                    <ul class="submenu">
+                                        <li><a href="../products/cards.html">Cards</a></li>
+                                        <li><a href="../products/money.html">Money</a></li>
+                                        <li><a href="../products/straw.html">Straw</a></li>
+                                        <li><a href="../products/coins.html">Coins</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../about/about.html">About</a></li>
+                                <li><a href="../contact/contact.html">Contact</a></li>
+                                <li><a href="../reference/reference.html">Reference</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="horizontalRight">
+                            <ul>
+                                <li><a id="cartLink" onclick="showCart()"><img id="cart" src="../home/cart.png" alt="cart"/></a></li>
+                                <li><a href="../login/login.html">Login</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+            </div>
+
+            <div id="cartContainer">
+                <div id="cartContent">
+                    <button id="exitCart" class="exitButton" onclick="hideCart()">&#10005;</button>
+                    <table id="inforCart">
+                        <caption>YOUR CART</caption>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Product</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cartBody">
+                            <tr>
+                                <td></td>
+                                <td>Your cart is empty</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="2">Total</th>
+                                <th id="total">$0</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <button id="buy" class="exitButton" onclick="purchase()">PURCHASE</button>
+                </div>
+            </div>
+            <div id="cartBg"></div>
+
+            <nav class="sideNav" id="navId">
+                <button id="exit" onclick="hideNav()">&#10005;</button>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../products/products.html">Products</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                    <li><a href="../reference/reference.html">Reference</a></li>
+                </ul>
+            </nav>
+            <div id="background"></div>  <!--blur background when navigation list is shown-->
+
+            <h1>Account</h1>
+
+            <div class="article">
+                <div id="login">
+                    <form name="login" action="../index.html" onsubmit="return validateForm('login')" method="post">
+                        <fieldset>
+                            <legend>Login</legend>
+
+                            <label for="mail">EMAIL &#42;</label><br/>
+                            <input type="email" id="mail" name="mail" placeholder="abc@gmail.com" required/><br/>
+        
+                            <label for="password">PASSWORD &#42;</label><br/>
+                            <input type="password" id="password" name="password" minlength="4" required/><br/>
+        
+                            <input type="submit" value="LOG IN" onclick="logIn()"/>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div id="signup">
+                    <form name="signup" action="../index.html" onsubmit="return validateForm('signup')" method="post">
+                        <fieldset>
+                            <legend>Create an Account</legend>
+
+                            <label for="fname" id="specialChar">FIRST NAME &#42;</label><br/>
+                            <input type="text" id="fname" name="fname" required/><br/>
+
+                            <label for="lname">LAST NAME &#42;</label><br/>
+                            <input type="text" id="lname" name="lname" required/><br/>
+
+                            <label for="mailR">EMAIL &#42;</label><br/>
+                            <input type="email" id="mailR" name="mailR" placeholder="abc@gmail.com" required/><br/>
+        
+                            <label for="passwordR">PASSWORD &#42;</label><br/>
+                            <input type="password" id="passwordR" name="passwordR" minlength="4" placeholder="At least 4 characters" required/><br/>
+
+                            <label for="passwordC">CONFIRM PASSWORD &#42;</label><br/>
+                            <input type="password" id="passwordC" name="passwordC" placeholder="Retype your password" required/><br/>
+
+                            <label for="special">SPECIALIZATION</label><br/>
+                            <input list="specialList" id="special" name="special" placeholder="Enter your specialized type of magic"/><br/>
+                            <datalist id="specialList">
+                                <option value="Cards">
+                                <option value="Coins">
+                                <option value="Money">
+                                <option value="Straw">
+                            </datalist>
+        
+                            <input type="submit" value="SIGN UP" onclick="signUp()"/>
+                        </fieldset>
+                    </form>
+                </div>
+            </div> 
+
+
+            <table class="bar">
+                    <tr>
+                    <th>Navigation</th>
+                    <td>Contact us for more information</td>
+                    <th>
+                        <a href="https://www.facebook.com/soflmagic" target="_blank"><img src="../home/facebookWhite.png" alt="facebook"/></a>
+                        <a href="https://www.youtube.com/channel/UCLPNja-M_Q9zFdi3XNqbSuw/videos" target="_blank"><img src="../home/youtubeWhite.png" alt="youtube"/></a>
+                    </th>
+                </tr>
+            </table>
+
+            <footer>
+                <div class="vertical">
+                    <h1>Main Menu</h1>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../products/products.html">Products</a></li>
+                        <li><a href="../about/about.html">About</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                        <li><a href="../reference/reference.html">Reference</a></li>
+                    </ul>
+                </div>
+
+                <div class="vertical">
+                    <h1>Social Media</h1>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/soflmagic" target="_blank"><img src="../home/facebookOrange.png" alt="facebook"/>Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCLPNja-M_Q9zFdi3XNqbSuw/videos" target="_blank"><img src="../home/youtubeOrange.png" alt="youtube"/>YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="vertical">
+                    <h1>Subscribe</h1>
+                    <p>Get offers, discounts, announcements, and more...</p>
+                    <form>
+                        <input type="email" id="email" name="email" size="25" placeholder="Enter your email..." />
+                    </form>
+                </div>
+            </footer>
+
+            <div class="footerBar">
+                <a>
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!" />
+                </a>
+
+                <p class="slogan">SOFL Production - Secret Of Fabulous Life</p>
+
+                <p class="floatRight" id="update">Updated &#64;</p>
+            </div>
+        </main>
+    </body>
+</html>
