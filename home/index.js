@@ -76,4 +76,4 @@ function currentSlide(index) {
 }
 
 /*Automatic slide change*/
-var autoSlide = setInterval("changeSlide(1)", 5000);
+setInterval("changeSlide(1)", 5000);
