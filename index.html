@@ -95,37 +95,25 @@
 
         
             <div id="gallery">
-                <ul>
-                    <!--
-                    <li>
-                        <video src="/Homeintro.mp4" controls>Your browser does not support video element.</video>
-                    </li>
-                    
-                    <li>
-                        <figure class="product">
-                            <img src="/Home/money.webp" alt="money swap"/>
-                            <figcaption>
-                                Money Swap<br/>
-                                Money Color Change - No Gimmick
-                            </figcaption>
-                            <button>Buy Now</button>
-                        </figure>
-                    </li>
-                    <li>
-                        <video src="/Home/compilation.mp4" poster="compilation.webp" autoplay>
-                            Your browser does not support video element.
-                        </video>
-                    </li>-->
-                    <li>
-                        <figure class="product">
-                            <img src="home/layout.png" alt="layout"/>
-                            <figcaption>
-                                <h1>Strawing<button>BUY NOW</button></h1>
-                                <h2>Move Drawing on Straw</h2>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
+                <figure class="product" id="gallery-container">
+                    <img src="home/layout.png" alt="layout"/>
+                    <div class="caption">
+                        <h1>Strawing<a href="products/straw/strawing/strawing.html">BUY NOW</a></h1>
+                        <h2>Move Drawing on Straw</h2>
+                    </div>
+                    <div class="caption">
+                        <h1>Swapper<a href="products/money/swapper/swapper.html">BUY NOW</a></h1>
+                        <h2>Lottery Ticket Color Change</h2>
+                    </div>
+                    <a class="backward" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="forward" onclick="changeSlide(1)">&#10095;</a>
+
+                    <div class="dot-container">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </figure>
 
                 <table class="bar">
                     <tr>
