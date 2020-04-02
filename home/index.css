@@ -20,48 +20,96 @@ div.infor > div > div > h2, #welcome h2 {
     width: 100%;
 }
 
-figure.product  {
+#gallery-container  {
     position: relative;
-    background-image: url("homebG.webp");   /*2.4.2 - a - Home -> Intro images: prevent image from streching too big*/ 
+    background-image: url("homebG.webp");
     background-size: cover;     /*2.4.2 - e */
     background-clip: border-box;
     background-origin: border-box;
-    max-height: 300px;
+    max-height: 550px;
 }
 
 figure.product img {
     width: 100%;
 }
 
-figure.product figcaption {
+.caption {
     display: none;
     position: absolute;
     left: 4em;
     bottom: 4em;
 }
 
-.product h2, .product h3 {
+.product h1, .product h2 {
     font-size: 3rem;
     font-style: italic;
     color: white;
     text-shadow: 1px 1px 1px black;
 }
 
-.product h3 {
+.product h2 {
     font-size: 2rem;
     margin-top: 1em;
 }
 
-.product button {
+.caption a {
     margin-left: 2em;
     padding: 0.7em;
     color: white;
-    background-color: hsla(220, 0%, 75%, 0.5);  /*2.4.2 - c - Home page -> Swipe the intro image below the navigation list to see the button "BUY NOW"*/
+    background-color: hsla(220, 0%, 75%, 0.5); /*2.4.2 - c - Home page -> Swipe the intro image below the navigation list to see the button "BUY NOW"*/
     background-color: rgba(191, 191, 191, 0.5);
     border: 2px solid white;
     font-size: 1rem;
+    text-shadow: none;
 }
 
+/*forward and backward buttons*/
+.forward, .backward {
+    display: block;
+    padding: 0.5em;
+    position: absolute;
+    top: 45%;
+    font-size: 2em;
+    background-color: rgba(187, 212, 255, 0.5);   /*2.4.2 - c - forwack and backward button in the Home page gallery*/
+}
+
+.forward {
+    right: 2%;
+    color: rgb(92, 162, 255);
+}
+
+.backward {
+    left: 2%;
+    color: white;
+}
+
+.forward:hover, .backward:hover {
+    background-color: rgba(138, 181, 255, 0.5);
+    cursor: pointer;
+}
+
+/*3 dots styles*/
+.dot-container {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    margin: 1em;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(164, 205, 255, 0.705);  
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active, .dot:hover {
+    background-color: rgb(57, 109, 172);
+}
 
 /*Products section*/
 #products {
