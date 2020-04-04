@@ -212,7 +212,7 @@ a.navicon:hover {
     font-size: 1.3em;
 }
 
-.exitButton {
+.exitButton, #exit {
     margin: 2em;
     padding: 1em;
     background-color: rgb(235, 106, 0);
@@ -221,7 +221,7 @@ a.navicon:hover {
     border: none;
 }
 
-.exitButton:hover {
+.exitButton:hover, #exit {
     background-color: rgb(255, 132, 31);
 }
 
