@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!--This page is about the member's information-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>SOFL Production | Reference</title>
+        <link href="../reset.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../base.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="reference.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../layout.css" rel="stylesheet" type="text/css" media="all" />
+
+        <script src="../baseScript.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <div class="fixed">
+                <div class="section">
+                    <a href="../index.html"><img id="logo" src="../home/logo2.png" alt="SOFL Logo"/></a>
+                    <header>
+                        <div class="adjust"></div>
+                        <nav class="horizontalLeft">
+                            <a class="navicon" id="naviconId" onclick="showNav()"><img src="../navicon.png" alt="navicon"/></a>
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a class="subTitle" href="../products/products.html">Products</a>
+                                    <ul class="submenu">
+                                        <li><a href="../products/cards.html">Cards</a></li>
+                                        <li><a href="../products/money.html">Money</a></li>
+                                        <li><a href="../products/straw.html">Straw</a></li>
+                                        <li><a href="../products/coins.html">Coins</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../about/about.html">About</a></li>
+                                <li><a href="../contact/contact.html">Contact</a></li>
+                                <li><a href="../reference/reference.html">Reference</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="horizontalRight">
+                            <ul>
+                                <li><a id="cartLink" onclick="showCart()"><img id="cart" src="../home/cart.png" alt="cart"/></a></li>
+                                <li><a href="../login/login.html">Login</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+            </div>
+
+            <div id="cartContainer">
+                <div id="cartContent">
+                    <button id="exitCart" class="exitButton" onclick="hideCart()">&#10005;</button>
+                    <table id="inforCart">
+                        <caption>YOUR CART</caption>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Product</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cartBody">
+                            <tr>
+                                <td></td>
+                                <td>Your cart is empty</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="2">Total</th>
+                                <th id="total">$0</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <button id="buy" class="exitButton" onclick="purchase()">PURCHASE</button>
+                </div>
+            </div>
+            <div id="cartBg"></div>
+
+            <nav class="sideNav" id="navId">
+                <button id="exit" onclick="hideNav()">&#10005;</button>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../products/products.html">Products</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                    <li><a href="../reference/reference.html">Reference</a></li>
+                </ul>
+            </nav>
+            <div id="background"></div>  <!--blur background when navigation list is shown-->
+
+            <h1>Reference</h1>
+
+            <div class="article">
+                <ol>
+                    <li><h2>9 Required Web Sites</h2>
+                        <ul class="second">
+                            <li><h3>3 Similar sites to my site</h3>
+                                <ol class="third">
+                                    <li><a href="https://www.sansminds.com/">Sansminds: </a> The layout is very mordern and professional, which satisfies the user's eyes.</li>
+                                    <li><a href="https://www.patrickkun.com/">Patrick Kun: </a> In mobile mode, the navigator list appears on the right side covering the full height of the screen, which is very convenient and professional.</li>
+                                    <li><a href="https://www.vanishingincmagic.com/">Vanishing Inc: </a> There is a list of tricks on the left side, which is very convenient to browse.</li>
+                                </ol>
+                            </li>
+
+                            <li><h3>3 Downloadable Sites</h3>
+                                <ol class="third">
+                                    <li><a href="https://unsplash.com/">Unsplash: </a> This site has a variety of images that meet almost all my needs.</li>
+                                    <li><a href="https://www.vecteezy.com/">Vecteezy: </a> There are a lot of vector images available, which is my main source of icon images..</li>
+                                    <li><a href="https://www.youtube.com/channel/UCLPNja-M_Q9zFdi3XNqbSuw/videos">SOFL Production: </a> The video contents match exactly what I need.</li>
+                                </ol>
+                            </li>
+
+                            <li><h3>3 Sites for Technical Information</h3>
+                                <ol class="third">
+                                    <li><a href="https://www.w3schools.com/">W3Schools: </a> This is my main source of information, which is very good at building the basics.</li>
+                                    <li><a href="https://www.tutorialspoint.com/">Tutorials Point: </a> This source is good for browsing advanced attributes.</li>
+                                    <li><a href="https://javascript.info/">JavaScript Infor: </a> The site focuses on JavaScript only. Everything from basic to advanced is organised and explained very well.</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li></li><li></li> <!--skip section 2 and 3-->
+
+                    <li><h2>Minimum Requirements Features</h2>
+                        <ol class="second">
+                            <li><h3>HTML5</h3>
+                                <ol class="third">
+                                    <li>Appropriate HTML5 tags, including use of HTML5 structural tags, <a href="../index.html#cartLink">&#60a&#62</a>, <a href="../about/about.html#pTag">&#60p&#62</a>, 
+                                        <a href="../about/about.html#h2Tag">&#60hn&#62</a>, <a href="../about/about.html#bqTag">&#60blockquote&#62</a>, <a href="../products/straw/strawing/strawing.html#olTag">&#60ol&#62</a>, 
+                                        <a href="../index.html#ulTag">&#60ul&#62</a>, <a href="../about/about.html#glossary">&#60dd&#62</a> to name a few.</li>
+                                    <li>Inline images both <a href="../about/about.html#staticImg">static</a> and <a href="../index.html#clickableImg">clickable</a>.</li>
+                                    <li>Use of appropriate <a href="../login/login.html#specialChar">special characters</a>.</li>
+                                    <li>Use of appropriate <a href="../index.html">&#60meta&#62</a> tags.</li>
+                                    <li>A footer on the home page indicating when the web site was <a href="../index.html#update">last updated or modified</a>.</li>
+                                </ol>
+                            </li>
+
+                            <li><h3>CSS3</h3>
+                                <h4>Please access to the Internet to use the links - they will guide you to the exact lines of codes uploaded in my GitHub (middle-click to open them in new tab).</h4>
+                                <h4>You can also go to the submitted files to see them (the name of each file is specified in the GitHub links).</h4>
+                                <ol class="third">
+                                    <li>Use CSS3 to format the appearance of <a href="https://github.com/minhanh29/SOFLWebsite/blob/c73d2c163f9920ef48aa43524db48975b28ee190/home/index.css#L133">paragraphs</a>, 
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/c385881fb96d6b2428965899f10c77d9e4333922/base.css#L105">lists</a>, 
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/c385881fb96d6b2428965899f10c77d9e4333922/base.css#L33">headers</a>, 
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/c73d2c163f9920ef48aa43524db48975b28ee190/home/index.css#L25">background images</a>, 
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/6868cea59b9b948e4a3676b4c80196ff50d5e10a/cart.css#L44">tables</a>, 
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/40e905dddd168cbe0dd7574c0c46c36493db52e3/login/login.css#L29">forms</a>.</li>
+                                    <li>Use CSS3 contextual selectors (<a href="https://github.com/minhanh29/SOFLWebsite/blob/17a102a9b12bdc24787106210a90043da2370fc5/login/login.css#L50">e1, e2, e3</a>; 
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/efddb93662130bdd05eec6702818736058c15e7d/base.css#L144">e f</a>; 
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/efddb93662130bdd05eec6702818736058c15e7d/base.css#L232">e > f</a>;
+                                         <a href="https://github.com/minhanh29/SOFLWebsite/blob/efddb93662130bdd05eec6702818736058c15e7d/base.css#L153">e + f</a>) 
+                                        and at least two attribute selectors (<a href="https://github.com/minhanh29/SOFLWebsite/blob/87723bb3b396fef4a7cbba71dc4f656432cdf76c/contact/contact.css#L63">selector 1 (type=submit)</a>, 
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/62f62b6aa16a35dfc75521b32cfc05c7f3b73bd1/evaluation/evaluation.css#L38">selector 2 (type=radio)</a>), excluding class and id attribute selectors.</li>
+                                    <li>Use of CSS3 styles for color ( <a href="https://github.com/minhanh29/SOFLWebsite/blob/40bc228502bfe76cdcff1fb1d5337907e00a2f0a/home/index.css#L73">RGBA</a> & 
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/40bc228502bfe76cdcff1fb1d5337907e00a2f0a/home/index.css#L59">HSLA</a>).</li>
+                                    <li>Use of dynamic pseudo-classes to highlight hyperlinks states of <a href="https://github.com/minhanh29/SOFLWebsite/blob/293b9f44cc3ec93d911aaa319548360a0d632f44/base.css#L227">link, visited, active, hover</a>; 
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/1f3983cfb4ac8f0aeb0ef062d4abcc1492aef053/base.css#L414">focus </a>
+                                        and two structural pseudo-classes: <a href="https://github.com/minhanh29/SOFLWebsite/blob/d32bca48596177c334abdc818a33a462b2ad3717/base.css#L265">first-of-type and last-of-type</a>.</li>
+                                    <li>Use of CSS3 background styles (<a href="https://github.com/minhanh29/SOFLWebsite/blob/079d1fa64dbb3c7900c9096dd9f18941405f0dc6/home/index.css#L26">background size, background-clip, background-origin,</a> 
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/5da8ba06b4d1a8db949989f0d42a875fa57216da/about/about.css#L40">padding, margins,</a> 
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/133761d49a1b5c082132b40905d6013dd1357325/base.css#L139">borders, use of an appropriate border style, use of rounded corners</a>).</li>
+                                    <li>Your home page should have a <a href="https://github.com/minhanh29/SOFLWebsite/blob/26d8f724dcc94cd1dadf84679b730cecb4069675/home/index.css#L143">drop cap</a> created with CSS3.</li>
+                                    <li>Define document content with the <a href="https://github.com/minhanh29/SOFLWebsite/blob/3e96fba419098ff2f722c9240793d48e1e18103a/base.css#L167">class and id properties and create styles</a> for them.</li>
+                                    <li>Use cascading styles to control page layout by using either <a href="https://github.com/minhanh29/SOFLWebsite/blob/d1a8555854ffdd41b5019afe234f58c2dcd70088/base.css#L108">grid</a>, 
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/3e96fba419098ff2f722c9240793d48e1e18103a/products/products.css#L10">flex</a>, 
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/d1a8555854ffdd41b5019afe234f58c2dcd70088/base.css#L123">float</a>, 
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/d1a8555854ffdd41b5019afe234f58c2dcd70088/base.css#L131">positioning</a>. 
+                                        The use of framework for layout is discouraged due to too many unknown factors.</li>
+                                    <li>Use of CSS3 <a href="https://github.com/minhanh29/SOFLWebsite/blob/ca665848685b753100c61b6edbb11b507a3e4c65/about/about.css#L124">text</a> and 
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/ca665848685b753100c61b6edbb11b507a3e4c65/about/about.css#L60">box</a> shadows.</li>
+                                    <li>Use of CSS3 <a href="https://github.com/minhanh29/SOFLWebsite/blob/744ad2c829a69d533804e1a82de1ac4273f231df/about/about.css#L220">transform rotate</a> feature.</li>
+                                    <li>Use of CSS3 opacity applied to <a href="https://github.com/minhanh29/SOFLWebsite/blob/6197606fde8c9f1f9391a262b68d3bd477699bf9/about/about.css#L72">two images to appear semi-transparent</a> .</li>
+                                </ol>
+                            </li>
+
+                            <li><h3>Web Form</h3>
+                                <ol class="third">
+                                    <li>Use of appropriate <a href="../login/login.html#special">form elements including some of the new HTML5 form elements</a>.</li>
+                                    <li>Apply <a href="https://github.com/minhanh29/SOFLWebsite/blob/a8e63d17ea26556102356e59d10072ac5b085b35/login/login.css#L29">appropriate styles to Web Forms</a>.</li>
+                                    <li>Apply <a href="https://github.com/minhanh29/SOFLWebsite/blob/a8e63d17ea26556102356e59d10072ac5b085b35/login/login.css#L59">inline form validation by using the focus pseudo-class</a> to appropriate form elements.</li>
+                                </ol>
+                            </li>
+
+                            <li><h3>Graphical Web Tables</h3>
+                                <ol class="third">
+                                    <li>Use of <a href="../products/products.html#inforCart">graphical web tables to depict relevant data</a>. <em>(Add some products and click the shopping cart icon on the top right corner to display the table)</em></li>
+                                </ol>
+                            </li>
+
+                            <li><h3>Multimedia Minimum</h3>
+                                <ol class="third">
+                                    <li>Use <a href="../index.html#sound">sound</a> (click "Add" button in each product to hear the sound), <a href="../index.html#introVid">video</a> somewhere on your site. Ensure these are of short duration preferably about 30 seconds.</li>
+                                    <li>Use of <a href="https://github.com/minhanh29/SOFLWebsite/blob/8092608b1189407e5de9e0829a96bea494c67775/base.css#L311">transitions</a> and 
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/98ec275fbf6a4717bb423a0b75ad3403b1674fb6/products/trick.css#L19">animations</a>.</li>
+                                </ol>
+                            </li>
+
+                            <li><h3>JavaScript</h3>
+                                <ol class="third">
+                                    <li>Use of <a href="https://github.com/minhanh29/SOFLWebsite/blob/a564b72e7877d38be8cd171d2ae17fa72d4a6f6d/cart.js#L4">variables, arithmetic,</a>
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/f1d18e85e97e32a219a23b04b104663c7ea7b34c/login/login.js#L110">comparison and logical operators,</a>
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/18a62de1d738cd30c047b7dd88fa04527b3f7cdc/cart.js#L116">subroutines, functions,</a> 
+                                        <a href="https://github.com/minhanh29/SOFLWebsite/blob/a564b72e7877d38be8cd171d2ae17fa72d4a6f6d/cart.js#L4">arrays,</a>
+                                         <a href="https://github.com/minhanh29/SOFLWebsite/blob/f1d18e85e97e32a219a23b04b104663c7ea7b34c/login/login.js#L110">conditional statements,</a>
+                                         <a href="https://github.com/minhanh29/SOFLWebsite/blob/f1d18e85e97e32a219a23b04b104663c7ea7b34c/login/login.js#L95">conditional operators,</a>
+                                         <a href="https://github.com/minhanh29/SOFLWebsite/blob/51c6566e660644af089c9ce2755e4ddb92bcaa30/home/index.js#L79">running time commands with system clock</a>.</li>
+                                    <li>Use of <a href="https://github.com/minhanh29/SOFLWebsite/blob/51c6566e660644af089c9ce2755e4ddb92bcaa30/home/index.js#L4">system date (example: clock, countdown timer to an event)</a> on your web site.</li>
+                                    <li><a href="https://github.com/minhanh29/SOFLWebsite/blob/682964380a7ecbbc3fa272a81724aefefb75926d/login/login.js#L3">Validating form input by using appropriate JavaScript functions</a>.</li>
+                                    <li>Use of <a href="https://github.com/minhanh29/SOFLWebsite/blob/f6991c92179cb1366b66f94fa6f9d3f356deb37e/login/login.js#L51">JavaScript alerts for validation purposes</a>.</li>
+                                    <li>Use of <a href="https://github.com/minhanh29/SOFLWebsite/blob/59c44c422a54edee9722c46b208a2f44fe677720/baseScript.js#L27">BOM/DOM in emulating events through the use of event handlers</a>.</li>
+                                </ol>
+                            </li>
+
+                            <li><h3>Responsive Design</h3>
+                                <ol class="third">
+                                    <li>Your web site design should implement each of the following responsive techniques on different pages on your web site:
+                                        <ol class="fourth">
+                                            <li>CSS Grid Layout using the display: <a href="https://github.com/minhanh29/SOFLWebsite/blob/d1a8555854ffdd41b5019afe234f58c2dcd70088/base.css#L108">grid</a> (in all pages)</li>
+                                            <li>CSS Flex Layout using the display:  <a href="https://github.com/minhanh29/SOFLWebsite/blob/3e96fba419098ff2f722c9240793d48e1e18103a/products/products.css#L10">flex</a> (in the Home page and the Products page)</li>
+                                            <li>CSS  <a href="https://github.com/minhanh29/SOFLWebsite/blob/d1a8555854ffdd41b5019afe234f58c2dcd70088/base.css#L131">Positioning</a> (in all pages).</li>
+                                        </ol>
+                                    </li>
+                                    <li>The use of <a href="https://github.com/minhanh29/SOFLWebsite/blob/67ac5cfe6c43b9c0fbac5059126ad087425755d1/base.css#L144">contextual selectors to control sub level menus</a>, including the use of a <a href="https://github.com/minhanh29/SOFLWebsite/blob/67ac5cfe6c43b9c0fbac5059126ad087425755d1/base.css#L159">navicon image</a> for mobile design is required.</li>
+                                </ol>
+                            </li>
+
+                            <li><h3>Call to Action (CTAs)</h3>
+                                <ol class="third">
+                                    <li><a href="../index.html#CTA1">CTA 1 (wait 5 seconds to see the "Buy Now" button when the intro image changes)</a></li>
+                                    <li><a href="../index.html#CTA2">CTA 2</a></li>
+                                    <li><a href="../index.html#CTA3">CTA 3</a></li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li></li>
+
+                    <li><h2><a href="../evaluation/evaluation.html">Demonstration Evaluation Form (Click here)</a></h2></li>
+                </ol>
+            </div>
+
+            <table class="bar">
+                    <tr>
+                    <th>Navigation</th>
+                    <td>Contact us for more information</td>
+                    <th>
+                        <a href="https://www.facebook.com/soflmagic" target="_blank"><img src="../home/facebookWhite.png" alt="facebook"/></a>
+                        <a href="https://www.youtube.com/channel/UCLPNja-M_Q9zFdi3XNqbSuw/videos" target="_blank"><img src="../home/youtubeWhite.png" alt="youTube"/></a>
+                    </th>
+                </tr>
+            </table>
+
+            <footer>
+                <div class="vertical">
+                    <h1>Main Menu</h1>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../products/products.html">Products</a></li>
+                        <li><a href="../about/about.html">About</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                        <li><a href="../reference/reference.html">Reference</a></li>
+                    </ul>
+                </div>
+
+                <div class="vertical">
+                    <h1>Social Media</h1>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/soflmagic" target="_blank"><img src="../home/facebookOrange.png" alt="facebook"/>Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCLPNja-M_Q9zFdi3XNqbSuw/videos" target="_blank"><img src="../home/youtubeOrange.png" alt="youTube"/>YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="vertical">
+                    <h1>Subscribe</h1>
+                    <p>Get offers, discounts, announcements, and more...</p>
+                    <form>
+                        <input type="email" id="email" name="email" size="25" placeholder="Enter your email..." />
+                    </form>
+                </div>
+            </footer>
+
+            <div class="footerBar">
+                <a>
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!" />
+                </a>
+
+                <p class="slogan">SOFL Production - Secret Of Fabulous Life</p>
+
+                <p class="floatRight" id="update">Updated &#64;</p>
+            </div>
+        </main>
+    </body>
+</html>
