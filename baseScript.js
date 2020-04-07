@@ -24,13 +24,14 @@ function setNone() {
 }
 
 //hide the navigation list in desktop mode
-setInterval("hideNavDesk()", 100);
+window.onresize = hideNavDesk;    /*2.4.6 - e - in mobile mode, click the navicon to display side Nav, then resize the browser to make it bigger. The Nav will disappear in desktop mode.*/
 
 function hideNavDesk() {
     var navicon = document.getElementById("naviconId");
     var Style = window.getComputedStyle(navicon);
     var disStatus = Style.getPropertyValue("display");
 
+    // only hide Nav when the navicon disappears
     if (disStatus == "none") {
         hideNav();
     }
